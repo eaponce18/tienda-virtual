@@ -39,5 +39,20 @@ export default function CatalogSection() {
       title: 'vestido azul',
       author: 'Danson67',
     },
+    {
+      img: 'src/assets/playera1.jpg',
+      title: 'playera celeste',
+      author: 'Fotoplayera',
+    },
+    {
+      img: 'src/assets/short1.png',
+      title: 'short flores',
+      author: 'Quicksilver',
+    },
+    {
+      img: 'src/assets/sombrero1.png',
+      title: 'sombrero paja',
+      author: 'Quicksilver',
+    },
 
 ];
