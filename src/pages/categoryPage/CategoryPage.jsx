@@ -35,7 +35,7 @@ function CategoryPage() {
     <Container maxWidth="lg">
       <Box sx={{ py: 4 }}>
         <Button 
-          onClick={() => navigate('/')} 
+          onClick={() => navigate('/home')} 
           sx={{ mb: 3 }}
           variant="outlined"
         >

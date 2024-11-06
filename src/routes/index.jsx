@@ -5,11 +5,18 @@ import {
   ProductDetailPage,
   ShoppingCartPage,
   PaymentMethodPage,
+  LoginPage,
 } from '../pages';
+import Login from '../pages/loginPage/LoginPage';
 
 export const router = createBrowserRouter([
+
   {
     path: '/',
+    element: <Login />,
+  },
+  {
+    path: '/home',
     element: <HomePage />,
   },
   {
