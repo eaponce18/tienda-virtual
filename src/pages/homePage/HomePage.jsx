@@ -1,10 +1,9 @@
-
 import { AppBar, Toolbar, Typography, Grid, Box, Paper } from '@mui/material';
-import CompanyInfo from './components/CompanyInfo';
-import './index.css';
-import CatalogSection from './components/CatalogSection';
+import CompanyInfo from '../../components/CompanyInfo';
+import CatalogSection from '../../components/CatalogSection';
+import './HomePage.css';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <AppBar position="static" color="primary">
@@ -41,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

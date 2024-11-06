@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 function CategoryPage() {
   const navigate = useNavigate();
 
+  const handleProductClick = (productId) => {
+    navigate(`/product/${productId}`);
+  };
+
   // Datos de ejemplo para los productos
   const products = [
     {
@@ -46,7 +50,9 @@ function CategoryPage() {
           {products.map((product) => (
             <Grid item xs={12} sm={6} md={4} key={product.id}>
               <Box
+                onClick={() => handleProductClick(product.id)}
                 sx={{
+                  cursor: 'pointer',
                   p: 2,
                   border: '1px solid #eee',
                   borderRadius: 2,

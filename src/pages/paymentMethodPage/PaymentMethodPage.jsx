@@ -1,15 +1,15 @@
 // PaymentMethodPage.js
-import { Typography, Box, TextField, Button } from '@mui/material';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import PaymentForm from './PaymentForm';
+
+const stripePromise = loadStripe('your_publishable_key');
 
 function PaymentMethodPage() {
   return (
-    <Box padding={2}>
-      <Typography variant="h5">Método de Pago</Typography>
-      <TextField fullWidth label="Dirección" margin="normal" />
-      <TextField fullWidth label="Celular" margin="normal" />
-      <TextField fullWidth label="Número de tarjeta" margin="normal" />
-      <Button variant="contained">Confirmar</Button>
-    </Box>
+    <Elements stripe={stripePromise}>
+      <PaymentForm />
+    </Elements>
   );
 }
 

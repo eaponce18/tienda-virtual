@@ -1,8 +1,15 @@
 // ShoppingCartPage.js
 import { Typography, Box, Grid, IconButton, Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { useNavigate } from 'react-router-dom';
 
 function ShoppingCartPage() {
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    navigate('/payment');
+  };
+
   return (
     <Box padding={2}>
       <Typography variant="h5">Carrito de Compra</Typography>
@@ -18,7 +25,13 @@ function ShoppingCartPage() {
         </Grid>
       </Grid>
       <Typography variant="h6">Total: ₡45200</Typography>
-      <Button variant="contained">Procesar Pago</Button>
+      <Button 
+        variant="contained" 
+        onClick={handleCheckout}
+        sx={{ mt: 2 }}
+      >
+        Proceder al Pago
+      </Button>
     </Box>
   );
 }

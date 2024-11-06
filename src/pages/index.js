@@ -4,4 +4,4 @@ export { default as CategoryPage } from './categoryPage/CategoryPage';
 export { default as ProductDetailPage } from './productDetailPage/ProductDetailPage';
 export { default as ShoppingCartPage } from './shoppingCartPage/ShoppingCartPage';
 export { default as PaymentMethodPage } from './paymentMethodPage/PaymentMethodPage';
-export { default as Page404 } from './page404/Page404';
+export { default as Page404 } from './404/Page404';
